@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver's Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+    <nav>
+        <h1>Realtime Bus Tracker</h1>
+    </nav>
+    <main>
+        <div class="container" id="signupPage">
+            <h2>👤 Driver Signup</h2>
+            <form id="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+                <button type="button" id="signupBtn">Sign Up</button>
+                <a href="#" id="showLogin">Already have an account? Login</a>
+            </form>
+        </div>
+        <div class="container" id="loginPage" style="display:none;">
+            <h2>👤 Driver Login</h2>
+            <input type="email" id="loginEmail" placeholder="Enter your email" required />
+            <input type="password" id="loginPassword" placeholder="Enter your password" required />
+            <button id="loginBtn">🔑 Login</button>
+            <p id="loginStatus"></p>
+        </div>
+        <div class="container" id="busPage" style="display:none;">
+            <h2>Enter Bus Details</h2>
+            <input type="text" id="busName" placeholder="Enter Bus Name (e.g., 121212)" />
+            <button id="sendLocationBtn">📍 Send Location</button>
+            <p id="status">Waiting for location...</p>
+            <div id="map"></div>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</body>
+
+</html>
