@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bus-Themed Container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffcc00;
+    border-radius: 15px;
+    border: 5px solid #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+h2, h1 {
+    color: #222;
+    font-weight: bold;
+}
+
+/* Input & Button Styling */
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    background-color: #fff8dc;
+    color: #333;
+}
+
+button {
+    background-color: #000;
+    color: #ffcc00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Logout Button */
+#logoutBtn {
+    background-color: red;
+}
+
+#logoutBtn:hover {
+    background-color: darkred;
+}
+
+/* Map Styling */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #map {
+        height: 300px;
+    }
+}
