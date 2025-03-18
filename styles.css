@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    color: white;
-    text-align: center;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fnebigdatahub.org%2Fnsdc%2Fnsdc-chapters%2Fst-josephs-engineering%2F&psig=AOvVaw01rPnh6rgWfT_Xt9vwv0Zn&ust=1742408436592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDz-bWflIwDFQAAAAAdAAAAABAf');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
