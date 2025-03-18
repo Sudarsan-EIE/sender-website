@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin's Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="container fade-in">
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h2>🔒 Login to Bus Tracker</h2>
+            <input type="email" id="email" placeholder="Enter Email" required />
+            <input type="password" id="password" placeholder="Enter Password" required />
+            <button id="loginBtn">Login</button>
+        </div>
+
+        <!-- Tracker Section (Hidden until login) -->
+        <div id="tracker" class="slide-in" style="display: none;">
+            <h1>🚌 Realtime Bus Tracker</h1>
+            <p id="welcomeUser"></p>
+            <label for="busName">Enter Bus Name:</label>
+            <input type="text" id="busName" placeholder="Enter Bus Name (e.g., 121212)" />
+            <button id="trackBusBtn">📡 Track Bus</button>
+            <p id="status">Waiting for location...</p>
+            <button id="logoutBtn">🚪 Logout</button>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
